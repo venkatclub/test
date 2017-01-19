@@ -1,0 +1,85 @@
+body{
+  background-color: orange;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+.header-nav{}
+.footer-nav{}
+
+.header-nav ul,
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+.header-nav li,
+.footer-nav li {
+  float: left;
+}
+.header-nav a,
+.footer-nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 16px;
+  color: blue;
+}
+.header-nav a:hover,
+.footer-nav a:hover {
+  background-color: green;
+}
+.header-nav a:active,
+.footer-nav a:active {
+  background-color: yellow;
+}
+.header-nav li.current-menu-item,
+.footer-nav li.current-menu-item {
+  background-color: pink;
+}
+
+
+
+/*aside adding aside */
+div#content {
+  width: 75%;
+  /*border: 2px #a2a2a2 solid;*/
+  float: left;
+}
+aside#secondary {
+  width: 23%;
+  /*border: 2px #a2a2a2 solid;*/
+  float: right;
+}
+footer{
+  clear: both;
+}
+
+
+/*front page box */
+.front-page-box-contanier {
+  background-color: #ddd;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid green;
+}
+.front-page-box-image{
+  width: 30%;
+  float: left;
+}
+.front-page-box-content {
+  width: 66%;
+  float: right;
+}
+
+
+
+/*style the_meta()*/
+.post-meta {font-variant: small-caps; color: maroon; }
+.post-meta-key {color: green; font-weight: bold; font-size: 110%; }
